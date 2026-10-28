@@ -1,7 +1,7 @@
-import { defineRailway, github, image, postgres, preserve, project, service } from 'railway/iac';
+import { defineRailway, github, postgres, preserve, project, service } from 'railway/iac';
 
 export default defineRailway(() => {
-  const db = postgres('postgres', { source: image('ghcr.io/railwayapp-templates/postgres-ssl:16') });
+  const db = postgres('postgres', { image: 'ghcr.io/railwayapp-templates/postgres-ssl:18' });
   const app = service('orders', {
     source: github('WillRaphaelson/railway-production-postgres', { branch: 'main' }),
     start: 'npm start',

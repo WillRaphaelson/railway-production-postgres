@@ -2,7 +2,7 @@
 
 An orders API that demonstrates private Postgres connections, safe retries, portable recovery, point-in-time recovery (PITR), connection pooling, and high availability (HA).
 
-The starter deploys one Node.js service and one official Railway Postgres 16 service. Backups, PITR, PgBouncer, and HA are added through Railway's database controls as you follow the runbook. They are not enabled by the starter. Every added service, volume, and bucket uses billable resources.
+The starter deploys one Node.js service and one official Railway Postgres 18 service. Backups, PITR, PgBouncer, and HA are added through Railway's database controls as you follow the runbook. They are not enabled by the starter. Every added service, volume, and bucket uses billable resources.
 
 ## Deploy
 
