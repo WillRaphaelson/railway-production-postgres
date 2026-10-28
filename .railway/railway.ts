@@ -10,6 +10,7 @@ export default defineRailway(() => {
     env: {
       DATABASE_URL: db.env.DATABASE_URL,
       NODE_ENV: 'production',
+      PORT: '3000',
       API_TOKEN: preserve(),
     },
   });
