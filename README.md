@@ -6,6 +6,8 @@ The starter deploys one Node.js service and one official Railway Postgres 18 ser
 
 ## Deploy
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/production-postgres-guide?utm_medium=integration&utm_source=button&utm_campaign=production-postgres-guide)
+
 Use the companion Railway template, or fork this repository and apply `.railway/railway.ts` with Railway CLI 5.71 or newer:
 
 ```bash
