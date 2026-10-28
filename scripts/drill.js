@@ -9,7 +9,7 @@ if (action === 'delete' && process.env.ALLOW_DEMO_DELETE !== 'yes') {
   throw new Error('Set ALLOW_DEMO_DELETE=yes to delete only this run’s three demo orders');
 }
 const keys = [1, 2, 3].map(n => `drill-${run}-${n}`);
-const pool = createPool(process.env.DATABASE_UNPOOLED_URL || process.env.DATABASE_URL);
+const pool = createPool();
 try {
   if (action === 'seed') {
     await pool.query(`INSERT INTO orders (idempotency_key, amount_cents)
